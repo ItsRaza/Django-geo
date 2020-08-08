@@ -38,6 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'Points',
+    'rest-framework',
+    'django.contrib.gis',
 ]
 
 MIDDLEWARE = [
@@ -77,8 +79,11 @@ WSGI_APPLICATION = 'Tdx.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.contrib.gis.db.backends.postgis',
-        'NAME': 'Points',
-        'USER': 'Raza',
+        'NAME': 'gis',
+        'USER': 'user001',
+        'PASSWORD': '786110',
+        'HOST': 'localhost',
+        'PORT': '5432
     }
 }
 
